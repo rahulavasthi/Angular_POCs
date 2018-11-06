@@ -1,0 +1,38 @@
+
+<div class="notificationContainer">
+  <div class="row margin0">
+  <div class="col-12 col-md-12 headingBlock">
+    <h3 class="blockTitle">Notifications</h3>
+  </div>
+  </div>
+  <div class="row margin0">
+    <div class="col-12 col-md-12 notificationBlock">
+      <ul class="notification-list">
+        <li class="list-item" *ngFor="let notify of notification; let i = index">
+          <div class="flag-btn"><span class="flag-new" *ngIf="notify.newFlag">NEW</span>
+          <div class="clearfix"></div>
+          </div>
+          <article class="notify-data">
+            <div class="notify-row d-flex flex-nowrap">
+              <div class="flex-fill">
+                <img class="userImage" alt="user Avatar" [src]="notify.profileImg" width="55px" height="55px">
+              </div>
+              <div class="flex-fill">
+                <p>{{notify.notifyData}}</p>
+                <div class="timestamp-container">
+                  <span class="timestamp">{{notify.timestamp}}</span>
+                </div>
+              </div>
+             </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row margin0">
+    <div class="col-12 col-md-12 padding0">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-profile">View All</button>
+    </div>
+  </div>
+</div>
+

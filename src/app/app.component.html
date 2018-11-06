@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div theme style="text-align:center">
+    <section>
+      <h3>Select your Theme: </h3>
+    <select [(ngModel)]="chosenTheme" (ngModelChange)="trigger()" id="selectid">
+      <option value="">choose</option>
+      <option *ngFor="let item of themes" value="{{item}}">{{item}}</option>
+    </select>
+  </section>
+<app-user-profile [profileDetails]="userProfileData"></app-user-profile>
+<app-notification [notificationDetails]="notificationData"></app-notification>
+</div>
+ 
+
+

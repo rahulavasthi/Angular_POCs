@@ -1,0 +1,107 @@
+//@import "~src/styles/global/variables";
+
+.margin0{ margin: 0;}
+.padding0{ padding: 0;}
+.notificationContainer{
+    width: 35%;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: var(--background);
+    -webkit-box-shadow: 6px 9px 10px 0px rgba(245,240,245,0.51);
+    -moz-box-shadow: 6px 9px 10px 0px rgba(245,240,245,0.51);
+    box-shadow: 6px 9px 10px 0px rgba(245,240,245,0.51);
+
+    .headingBlock{
+        height: 60px;
+        background-color: var(--primary-bg);
+        border-radius: 10px 10px 0 0;
+
+        .blockTitle{
+            color: var(--on-primary-bg);
+            font-size: 20px;
+            text-align: left;
+            margin: 18px 15px;
+        }
+    }
+    
+
+    .btn{
+        :focus{
+            box-shadow: none;
+            border: none;
+            outline: none;
+        }
+    }
+    .btn-primary{
+        border: none;
+        :hover {
+            border: none;
+            box-shadow: none;
+        }
+        :focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+    }
+    .notificationBlock{
+        padding: 0;
+        background-color: var(--secondary-bg);
+        color: var(--on-secondary-bg);
+        text-align: left;
+        font-size: 12px;
+
+        .notification-list{
+            margin: 0;
+            padding: 0;
+
+            .list-item{
+                list-style: none;
+                border-bottom: 1px solid var(--border);
+
+                .flag-btn{
+                    padding: 8px 20px 8px 0; 
+                    .flag-new{
+                        padding: 3px 10px;
+                        background-color: var(--btn-flag);
+                        border-radius: 5px;
+                        float: right;
+                    }
+                }
+                article.notify-data{
+                    padding-bottom: 20px;
+                    .notify-row{
+                        padding: 0 15px;
+                        .userImage{
+                            border: 1px solid var(--border);
+                            border-radius: 50%;
+                            margin: 0 15px;
+                        }
+                        p{
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .timestamp-container{
+                        padding: 0 12px 0 0;
+                        .timestamp{
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .list-item:hover{
+                    background-color: var(--list-hover);
+            }
+        }
+
+    }
+
+    .btn-profile{
+        margin: 0;
+        padding: 15px 0;
+        background-color: var(--primary-btn);
+        border-radius: 0 0 10px 10px;
+    }
+}

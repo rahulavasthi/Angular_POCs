@@ -1,0 +1,49 @@
+
+<div class="profileContainer">
+  <div class="row margin0">
+  <div class="col-12 col-md-12 firstBlock position-relative">
+    <div class="userImage position-absolute">
+      <img alt="User Avatar" [src]="user.profileImg" width="120px" height="120px">
+    </div>
+  </div>
+  </div>
+  <div class="row margin0">
+    <div class="col-12 col-md-12 detailsBlock">
+    <h2 calss="name">{{user.fullName}}</h2>
+    <div calss="designation">
+      <div class="contentblock">{{user.designation}}</div>
+      <div class="contentblock">{{user.project}}</div>
+    </div>
+    <ul class="info-list">
+      <li><span>
+          <fa-icon [icon]="faMapMarker" style="color:white;" class="fa-lg"></fa-icon>
+        </span>{{user.location}}</li>
+      <li><span>
+          <fa-icon [icon]="faEnvelope" style="color:white;" class="fa-lg"></fa-icon>
+        </span>{{user.user_id}}</li>
+    </ul>
+    </div>
+  </div>
+  <div class="row margin0">
+    <div class="col-6 col-md-6 padding0">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-options">
+        <span>
+          <fa-icon [icon]="faSignOutAlt" style="color:white;" class="fa-lg"></fa-icon>
+        </span><br>Logout
+      </button>
+    </div>
+    <div class="col-6 col-md-6 padding0">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-options">
+        <span>
+          <fa-icon [icon]="faCogs" style="color:white;" class="fa-lg"></fa-icon>
+        </span><br>Settings
+      </button>
+      </div>
+  </div>
+  <div class="row margin0">
+    <div class="col-12 col-md-12 padding0">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-profile">My Profile</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,99 @@
+.margin0{ margin: 0;}
+.padding0{ padding: 0;}
+.profileContainer{
+    width: 35%;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #dedede;
+    -webkit-box-shadow: 6px 9px 10px 0px rgba(245,240,245,0.51);
+    -moz-box-shadow: 6px 9px 10px 0px rgba(245,240,245,0.51);
+    box-shadow: 6px 9px 10px 0px rgba(245,240,245,0.51);
+
+    .firstBlock{
+        height: 230px;
+        background-color: var(--primary-bg);
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .userImage{
+        top: 170px;
+        border-radius: 50%;
+        z-index: 9999;
+        text-align: center;
+    }
+    .detailsBlock{
+        padding-top: 70px;
+        background-color: var(--secondary-bg);
+        color: var(--on-secondary-bg);
+        text-align: center;
+
+        h2.name{
+            font-weight: 800;
+            font-size: 16px;
+        }
+        .designation{
+            font-size: 14px;
+
+            .contentblock{
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        .info-list{
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+                list-style: none;
+                padding: 30px 0;
+                width: 50%;
+                span{
+                    margin-right: 10px;
+                    fa-icon{
+
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        :focus{
+            box-shadow: none;
+            border: none;
+            outline: none;
+        }
+    }
+    .btn-primary{
+        border: none;
+        :hover {
+            border: none;
+            box-shadow: none;
+        }
+        :focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+    }
+    .btn-options{
+        margin: 0;
+        height: 60px;
+        background-color: var(--sec-btn);
+        border-radius: 0;
+        font-size: 13px;
+        border-top: 1px solid var(--button-border);
+    }
+    .btn-options:first-of-type{
+          border-right: 1px solid var(--button-border);  
+        }
+    .btn-profile{
+        margin: 0;
+        padding: 15px 0;
+        background-color: var(--primary-btn);
+        border-radius: 0 0 10px 10px;
+    }
+}
