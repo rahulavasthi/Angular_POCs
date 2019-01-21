@@ -1,0 +1,27 @@
+<div class="container">
+  <h3 style= "text-align: center;">Drag-Drop and Resizable POC</h3>
+</div>
+<div class="wrapper">
+	<div class="row">
+	  <div class="col-sm-12">
+	    <div class="drag-boundary">
+	      <kendo-sortable [data]="cardList" [navigatable]="true" [animation]="true">
+	        <ng-template let-item="item">
+	          <div draggable="true" ngResizable class="drag-block">
+	            <h6>{{item.BookId}}</h6>
+	            <h6>{{item.AuthorName}}</h6>
+	            <h6>{{item.Availability}}</h6>
+	            <h6>{{item.BookCount}}</h6>
+	            <h6>{{item.BookName}}</h6>
+	            <h6>{{item.BookPrice}}</h6>
+	            <h6>{{item.PublishDate}}</h6>
+	            <h6>{{item.Publisher}}</h6>
+	            <h6>{{item.Rating}}</h6>
+	          </div>
+	        </ng-template>
+	      </kendo-sortable>
+	    </div>
+	  </div>
+	</div>
+</div>	
+	
