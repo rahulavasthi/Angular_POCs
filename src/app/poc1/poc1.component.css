@@ -1,0 +1,32 @@
+.ng-draggable {
+    cursor:pointer;
+  }
+.drag-boundary {
+    width: 90vw;
+    min-height: 90vh;
+    overflow: hidden;
+    border: 1px solid gray;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ng-draggable {
+    cursor: move;
+    background-color: #20a8d8;
+}
+.drag-block {
+    min-width: 10vw;
+    min-height: 31vh;
+    margin: 10px;
+    background-color:#4485f3;
+    color: #fff;
+    padding: 8px 20px;
+    float: left;
+    border-radius:0.3em;
+    line-height: 50px;
+    text-align: center;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
